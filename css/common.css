@@ -36,6 +36,7 @@ fieldset{
     z-index: 10;
 }
 
+
 /*레이아웃*/
 header, footer, body, html, #wrapper{
     width: 100%;
@@ -65,7 +66,7 @@ header{
 .logo img {
     height: 45px;
 }
-nav{    
+header nav{    
     position: absolute;
     right: 20px;
     top: 13px;
