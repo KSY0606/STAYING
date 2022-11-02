@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+#contentsArea {
+    
+    margin-top: 80px;
+    background-color: violet;
+}
+
+
+#info {
+    float: left;
+    width: 600px;
+    height: 700px;
+    background-color: antiquewhite;
+}
+
+
+/* 예약자 정보 */
+.reserve_info {
+    height: 230px;
+    background-color: aqua;
+}
+.reserve_info > h2 {
+    height: 30px;
+    font-size: 21px;
+    font-weight: 500;
+}
+#login_form {
+    height: 200px;
+    background-color: bisque;
+}
+.name, .tel {
+    height: 100px;
+    background-color: tomato;
+}
+.name > label, .tel > label {
+    display: inline-block;
+    width: 580px;
+    margin: 10px 0 10px 20px;
+}
+.name > input, .tel > input {
+    margin-left: 20px;
+}
+.tel > label > span {
+    margin-left: 20px;
+    font-size: 10px;
+}
+
+
+/* 결제 정보 */
+.payment_info {
+    height: 300px;
+    margin-top: 60px;
+    background-color: cyan;
+}
+.payment_info > h2 {
+    height: 30px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.form_check_wrap {
+    height: 30px;
+    margin-top: 20px;
+    background-color: burlywood;
+}
+.form_check_wrap > div {
+    display: inline-block;
+    margin-left: 20px;
+}
+.payment {
+    height: 190px;
+    margin-top: 30px;
+    background-color: red;
+}
+.pay1 > p {
+    height: 40px;
+    background-color: yellow;
+}
+.pay1 > p > label {
+    display: inline-block;
+    margin-left: 20px;
+}
+.pay1 > p > select {
+    width: 150px;
+    display: inline-block;
+    margin-left: 15px;
+} 
+.pay1 p:nth-child(2) input { /* 입금자명 라인*/
+    margin-left: 20px;
+    width: 150px;
+}
+.pay1 p:nth-child(3) { /* 입금계좌 라인*/
+    margin-left: 20px;
+    background-color: green;
+}
+
+.pay2 {
+    display: none;
+}
+.pay2 > p {
+    height: 40px;
+    background-color: blueviolet;
+}
+.pay2 > p > label {
+    display: inline-block;
+    margin-left: 20px;
+}
+.pay2 > p > select {
+    width: 150px;
+    display: inline-block;
+    margin-left: 15px;
+} 
+
+.agree {
+    height: 200px;
+    background-color: greenyellow;
+}
+.agree > .form-check {
+    margin-left: 20px;
+    background-color: darkseagreen;
+}
+.agree_content {
+    overflow: scroll;
+    width: 580px;
+    height: 150px;
+    margin: 15px 0 0 20px;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+#room_info {
+    float: left;
+    width: 350px;
+    height: 590px;
+    background-color: aquamarine;
+    
+}
