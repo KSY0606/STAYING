@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인페이지</title>
-    <!--메인페이지 css-->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
     <!--공통 css-->
     <link rel="stylesheet" type="text/css" href="css/common.css">
-    <!-- 제이쿼리-->
+    <!--메인페이지 css-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--인기 숙소-->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/best_room_select.js"></script>
+    <!--달력-->
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/datepicker.ko.js"></script>
+    <!--스크롤시 상단바-->
+    <script src="js/scroll.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/scroll.css">
 
 </head>
 <body>
@@ -21,6 +28,25 @@
 
     <!--wraper 시작-->
     <div id="wrapper">
+        <div id="scroll_wrap">
+            <div class="scroll">
+                <div class="sc_search">
+                    <input type="text" class="sc_room_name" placeholder="숙 소 명">
+                </div>
+                <div class="sc_check_in">
+                    <input type="text" class="sc_date" id="datepicker1" placeholder="체크인 날짜">
+                </div>
+                <div class="sc_check_out">
+                    <input type="text" class="sc_date" id="datepicker2" placeholder="체크아웃 날짜">
+                </div>
+                <div class="sc_people">
+                    <input type="text" class="sc_people_num" placeholder="인원수">
+                </div>
+                <div class="sc_btn">
+                    <button class="sc_button">검색</button>
+                </div>
+            </div>
+        </div>
         <!--헤더 영역 시작-->
         <header>
             <h1 class="logo">
@@ -59,10 +85,10 @@
                 </div>
                 <div class="date_wrap">
                     <div class="date">
-                        <input type="date" class="check_in">
-                        <input type="date" class="check_out">
-                        <input type="text" class="search">
-                        <button>검색</button>
+                        <input type="text" class="check_in" id="datepicker1" placeholder="체크인 날짜">
+                        <input type="text" class="check_out" id="datepicker2" placeholder="체크아웃 날짜">
+                        <input type="text" class="search" placeholder="숙소명">
+                        <button class="date_btn">검색</button>
                     </div>
                 </div>
             </div>
@@ -347,5 +373,6 @@
         </footer>
         <!--푸터 영역 종료-->
     </div>
+    <script src="js/datepicker.js"></script>
 </body>
 </html>
