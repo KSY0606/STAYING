@@ -12,6 +12,8 @@
     <!-- 결제창 선택시 변경 js-->
     <script src="js/jquery-3.6.0.min.js"></script>
     
+    <!-- 약관 동의 펼치기-->
+    <script src="js/agree_content.js"></script>
     <!-- 부트스트랩 input태그 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
@@ -97,9 +99,9 @@
                 <div class="agree">
                     <div class="form-check">
                         <input type="radio" id="agree" class="form-check-input" name="flexRadioDefault1">
-                        <label class="form-check-label" for="agree">약관 동의합니다.</label>
+                        <label class="form-check-label" for="agree">약관 동의합니다. </label><span onclick="show_content();"> 눌러서 내용보기</sapn>
                     </div>
-                    <div class="agree_content">
+                    <div id="agr_content" class="agree_content">
                         제1조(목적)
                         본 회원약관은 OOOO-업체명(이하 '갑'라 한다)이 운영하는 인터넷관련 서비스(이하 '서비스'라 한다)를 이용함에 있어 관리자와 이용자(이하 '회원'라 한다)의 권리, 의무 및 책임사항을 규정함을 목적으로 한다.
 
@@ -137,9 +139,20 @@
             <div id="room_info">
                 <div class="room_info_wrap">
                     <div class="room_info_pic">
-                        <img src="#" alt="객실사진">
+                        <img src="images/객실내부.jpg" alt="객실사진">
                     </div>
-
+                    <div class="room_info_data">
+                        <p class="room_name">ㅇㅇㅇ호텔</p>
+                        <p class="room_type">스탠다드 더블</p>
+                        <p class="room_in">체크인</p>
+                        <p class="date">22년 11월 25일   15시</p>
+                        <p class="room_out">체크아웃</p>
+                        <p class="date">22년 11월 26일   12시</p>
+                        <p class="total">총 90,000원</p>
+                    </div>
+                    <div class="room_pay">
+                        <button>결제하기</button>
+                    </div>
                 </div>
             </div>
         </div>
