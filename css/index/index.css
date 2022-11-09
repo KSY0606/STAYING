@@ -4,7 +4,7 @@ html, body, div, header, footer, h1, h2, img, button, input, section, ul, li, ad
     margin: 0;
     padding: 0;
 }
-#main_img, #controller, #best_hotel_wrap, #exhibition, #festival {
+#controller, #best_hotel_wrap, #exhibition, #festival {
     width: 960px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -51,6 +51,7 @@ main {
     height: 40px;
     margin-top: 22.5px;
 }
+
 .date_wrap {
     height: 85px;
     border-top: 1px solid rgb(0, 0, 0, 0.18);
@@ -116,21 +117,22 @@ main {
 /*공연/전시 영역 시작*/
 #exhibition {
     width: 574px;
-    height: 230px;
+    /*height: 230px;*/
 }
+/*
 .exhibition_wrap {
     height: 230px;
-}
+}*/
 .exhibition {
     width: 180px;
 }
 .exhibition_pic {
     width: 180px;
-    height: 165px;
+    /*height: 165px;*/
 }
 .exhibition_pic > img {
     width: 180px;
-    height: 165px;
+    /*height: 165px;*/
     border-radius: 3px;
 }
 .exhibition > p {
