@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인페이지</title>
     <!--공통 css-->
-    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/common/common.css">
     <!--메인페이지 css-->
     <link rel="stylesheet" type="text/css" href="css/index2.css">
     <!--인기 숙소-->
@@ -95,9 +95,10 @@
                                 </div>
                                 <div class="date_wrap">
                                     <div class="date">
+                                        <input type="text" class="check_in" id="datepicker1" placeholder="eeeee">
                                         <input type="text" class="check_in" id="datepicker1" placeholder="체크인 날짜">
                                         <input type="text" class="check_out" id="datepicker2" placeholder="체크아웃 날짜">
-                                        <input type="text" class="search" placeholder="숙소명">
+                                        <input type="text" name="stay_person" class="search" placeholder="인원수">
                                         <button type="button" class="btn btn-outline-primary btn-sm">검색</button>
                                     </div>
                                 </div>
@@ -111,7 +112,7 @@
                         <div id="best_hotel_wrap" class="card shadow-sm">
                             <!--인기 펜션-->
                             <div class="best_guesthouse row">
-                                <h2 class="mb-4 fst-italic">인기 게스트하우스</h2>
+                                <h2 class="mb-4">인기 게스트하우스</h2>
                                 <div class="room col">
                                     <div class="room_pic">
                                         <img src="images/Home/best_room/Jeonju Galleria Stay.jpg" alt="guesthouse_pic">
@@ -156,7 +157,7 @@
                 
                             <!--인기 호텔-->
                             <div class="best_hotel row">
-                                <h2 class="mb-4 fst-italic">인기 호텔</h2>
+                                <h2 class="mb-4">인기 호텔</h2>
                                 <div class="room col">
                                     <div class="room_pic">
                                         <img src="images/Home/best_room/Grand Hillston Hotel.jpg" alt="hotel_pic">
@@ -201,7 +202,7 @@
                 
                             <!--인기 캠핑장-->
                             <div class="best_camping row">
-                                <h2 class="mb-4 fst-italic">인기 캠핑장</h2>
+                                <h2 class="mb-4">인기 캠핑장</h2>
                                 <div class="room col">
                                     <div class="room_pic">
                                         <img src="images/Home/best_room/Juno Glamping.jpg" alt="camping_pic">
@@ -246,7 +247,7 @@
                 
                             <!--인기 한옥-->
                             <div class="best_hanok row">
-                                <h2 class="mb-4 fst-italic">인기 한옥</h2>
+                                <h2 class="mb-4">인기 한옥</h2>
                                 <div class="room col">
                                     <div class="room_pic">
                                         <img src="images/Home/best_room/Jeonju Hanok Village.jpg" alt="hanok_pic">
@@ -296,7 +297,7 @@
                     <div class="row g-5">
                         <div class="col-md-8">
                             <!-- 공연,전시 영역 -->
-                            <h5 class="pb-4 mb-4 fst-italic border-bottom">공연 / 전시</h5>
+                            <h5 class="pb-4 mb-4 border-bottom">공연 / 전시</h5>
                             <article class="blog-post">
                                 <div class="col-12" >
                                     <div id="exhibition" >
@@ -329,7 +330,7 @@
                             <!-- // 공연,전시 영역 -->
 
                             <!-- 축제 영역 -->
-                            <h5 class="pb-4 mb-4 fst-italic border-bottom">축제</h5>
+                            <h5 class="pb-4 mb-4 border-bottom">축제</h5>
                             <article class="blog-post">
                                 <div class="col-12" >
                                     <div id="festival" >
@@ -365,7 +366,7 @@
                         <div class="col-md-4">
                             <div class="position-sticky" style="top: 2rem;">
                                 <div class="p-4 mb-3 bg-light rounded">
-                                    <h5 class="fst-italic">추천 관광명소</h5>
+                                    <h5>추천 관광명소</h5>
                                     <p class="mb-0">1. 전주 한옥마을</p>
                                     <p class="mb-0">2. 경기전</p>
                                     <p class="mb-0">3. 전주 전동성당</p>
@@ -373,7 +374,7 @@
                                     <p class="mb-0">5. 남부시장</p>
                                 </div>
                                 <div class="p-4">
-                                    <h5 class="fst-italic">역사적인 장소</h5>
+                                    <h5>역사적인 장소</h5>
                                     <p class="mb-0">전주향교</p>
                                     <p class="mb-0">한벽당</p>
                                     <p class="mb-0">천주교성지 치명자산</p>
@@ -381,7 +382,7 @@
                                     <p class="mb-0">풍남문</p>
                                 </div>
                                 <div class="p-4">
-                                    <h5 class="fst-italic">즐길거리 & 랜드마크</h5>
+                                    <h5>즐길거리 & 랜드마크</h5>
                                     <p class="mb-0">전주 한옥마을</p>
                                     <p class="mb-0">학인당</p>
                                     <p class="mb-0">자만 벽화마을</p>
