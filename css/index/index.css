@@ -14,6 +14,11 @@ main {
     margin: 0 auto;
 }
 
+/* 테스트  컨트롤러 이미지에 가리는용 */
+#container {
+    position: relative;
+    top: -80px;
+}
 
 /*메인 이미지 영역 시작*/
 #main_img {
