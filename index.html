@@ -19,7 +19,7 @@
     <script src="js/index/datepicker.min.js"></script>
     <script src="js/index/datepicker.ko.js"></script>
     <!-- 아이콘 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <!-- 스크롤시 상단바 -->
     <!-- <script src="js/index/scroll.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index/scroll.css"> -->
@@ -122,15 +122,15 @@
                                         </select>
                                     </label>
                                     <label>
-                                        <span class="cal fa fa-calendar"></span>
-                                        <input type="text" name="chech_in" class="check_in" id="datepicker1" placeholder="체크인">
+                                        <span class="cal far fa-calendar-alt"></span>
+                                        <input type="text" name="check_in" class="check_in" id="datepicker1" placeholder="체크인">
                                     </label>
                                     <label>
-                                        <span class="cal fa fa-calendar"></span>
-                                        <input type="text" name="chech_out" class="check_out" id="datepicker2" placeholder="체크아웃">
+                                        <span class="cal far fa-calendar-alt"></span>
+                                        <input type="text" name="check_out" class="check_out" id="datepicker2" placeholder="체크아웃">
                                     </label>
                                     <label>
-                                        <span class="users fa fa-user-o" aria-hidden="true"></span>
+                                        <span class="users fa fa-users" aria-hidden="true"></span>
                                         <input type="text" class="stay_person" name="stay_person" placeholder="인원수">
                                     </label>
                                     <button type="button" class="btn_stay_search"><span class=" saerch fa fa-search" aria-hidden="true"></span></button>
@@ -142,7 +142,7 @@
 
                     <!-- best_hotel -->
                     <div class="col-12">
-                        <div id="best_hotel_wrap" class="card shadow-sm">
+                        <div id="best_hotel_wrap">
                             <!--인기 펜션-->
                             <div class="best_guesthouse row">
                                 <h2 class="mb-4">인기 게스트하우스</h2>
@@ -327,7 +327,7 @@
                     <!-- // best_hotel -->
 
                     <!-- 좌측 공연,축제   우측 인기차트?(수정)-->
-                    <div class="row g-5">
+                    <div class="row g-5" id="un_left">
                         <div class="col-md-8">
                             <!-- 공연,전시 영역 -->
                             <h5 class="pb-4 mb-4 border-bottom">공연 / 전시</h5>
@@ -398,29 +398,29 @@
                         <!-- 우측 인기차트? 영역 -->
                         <div class="col-md-4">
                             <div class="position-sticky" style="top: 2rem;">
-                                <div class="p-4 mb-3 bg-light rounded">
-                                    <h5>추천 관광명소</h5>
-                                    <p class="mb-0">1. 전주 한옥마을</p>
-                                    <p class="mb-0">2. 경기전</p>
-                                    <p class="mb-0">3. 전주 전동성당</p>
-                                    <p class="mb-0">4. 오목대 이목대</p>
-                                    <p class="mb-0">5. 남부시장</p>
+                                <div class="p-4 mb-3 rounded" id="place">
+                                    <h5><span class="fa fa-thumbs-up"></span> 인기! 관광명소</h5>
+                                    <p>전주 한옥마을</p>
+                                    <p>경기전</p>
+                                    <p>전주 전동성당</p>
+                                    <p>오목대 이목대</p>
+                                    <p>남부시장</p>
                                 </div>
-                                <div class="p-4">
-                                    <h5>역사적인 장소</h5>
-                                    <p class="mb-0">전주향교</p>
-                                    <p class="mb-0">한벽당</p>
-                                    <p class="mb-0">천주교성지 치명자산</p>
-                                    <p class="mb-0">청연루</p>
-                                    <p class="mb-0">풍남문</p>
+                                <div class="p-4" id="history">
+                                    <h5><span class="fa fa-utensils"></span> 추천! 인기맛집</h5>
+                                    <p>연식당</p>
+                                    <p>큰가마하누소</p>
+                                    <p>한국집</p>
+                                    <p>교동석갈비</p>
+                                    <p>고궁</p>
                                 </div>
-                                <div class="p-4">
+                                <div class="p-4" id="landmark">
                                     <h5>즐길거리 & 랜드마크</h5>
-                                    <p class="mb-0">전주 한옥마을</p>
-                                    <p class="mb-0">학인당</p>
-                                    <p class="mb-0">자만 벽화마을</p>
-                                    <p class="mb-0">전주소리문화관</p>
-                                    <p class="mb-0">전주한옥생활체험관</p>
+                                    <p>전주 한옥마을</p>
+                                    <p>학인당</p>
+                                    <p>자만 벽화마을</p>
+                                    <p>전주소리문화관</p>
+                                    <p>전주한옥생활체험관</p>
                                 </div>
                             </div>
                         </div>
