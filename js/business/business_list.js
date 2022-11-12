@@ -2,15 +2,15 @@
 $(function() {
     $('.select1').click(function() {
         $('.table').show();
+        $('#review_wrap').hide();
         $('#select_wrap').show();
-        $('.review_wrap').hide();
     })
 });
 $(function() {
     $('.select2').click(function() {
-        $('.review_wrap').show();
-        $('#select_wrap').hide();
         $('.table').hide();
+        $('#review_wrap').show();
+        $('#select_wrap').hide();
 
         // 객실삭제 버튼 누르고 input박스 생긴 상태에서 리뷰눌렀을 경우 객실관리(기본화면)으로 변경
         $('.del_click').css("display", "none");
